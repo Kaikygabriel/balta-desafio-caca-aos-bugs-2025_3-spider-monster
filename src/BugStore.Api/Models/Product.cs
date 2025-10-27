@@ -1,8 +1,9 @@
-namespace BugStore.Models;
+using BugStore.Models.Abstraction;
 
-public class Product
+namespace BugStore.Api.Models;
+
+public class Product : Entity
 {
-    public Guid Id { get; set; }
     public string Title { get; set; }
     public string Description { get; set; }
     public string Slug { get; set; }

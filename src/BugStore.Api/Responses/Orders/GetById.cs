@@ -1,6 +1,6 @@
+using BugStore.Api.Models;
+using BugStore.Models;
+
 namespace BugStore.Responses.Orders;
 
-public class GetById
-{
-    
-}
+public record GetById(Order Order);

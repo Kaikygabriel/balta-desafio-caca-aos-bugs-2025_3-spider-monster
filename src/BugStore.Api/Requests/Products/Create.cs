@@ -1,6 +1,6 @@
-namespace BugStore.Requests.Products;
+using BugStore.Api.Models;
+using MediatR;
 
-public class Create
-{
-    
-}
+namespace BugStore.Api.Requests.Products;
+
+public record Create(Product Product): IRequest<Responses.Products.Create>;

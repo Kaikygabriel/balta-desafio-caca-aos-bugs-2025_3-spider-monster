@@ -1,6 +1,5 @@
-namespace BugStore.Requests.Customers;
+using MediatR;
 
-public class Get
-{
-    
-}
+namespace BugStore.Api.Requests.Customers;
+
+public record Get : IRequest<Responses.Customers.Get>;

@@ -1,6 +1,6 @@
-namespace BugStore.Requests.Customers;
+using BugStore.Api.Models;
+using MediatR;
 
-public class Update
-{
-    
-}
+namespace BugStore.Api.Requests.Customers;
+
+public record Update(Customer Customer) : IRequest<Responses.Customers.Update>;

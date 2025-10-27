@@ -1,6 +1,6 @@
-namespace BugStore.Requests.Customers;
+using BugStore.Api.Models;
+using MediatR;
 
-public class Create
-{
-    
-}
+namespace BugStore.Api.Requests.Customers;
+
+public record Create(Customer Customer) :IRequest<Responses.Customers.Create>;

@@ -1,6 +1,6 @@
+using BugStore.Api.Models;
+using BugStore.Models;
+
 namespace BugStore.Responses.Customers;
 
-public class Get
-{
-    
-}
+public record Get(IEnumerable<Customer> Customers);

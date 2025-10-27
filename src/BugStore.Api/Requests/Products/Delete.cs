@@ -1,6 +1,6 @@
-namespace BugStore.Requests.Products;
+using BugStore.Api.Models;
+using MediatR;
 
-public class Delete
-{
-    
-}
+namespace BugStore.Api.Requests.Products;
+
+public record Delete(Product Product) : IRequest<Responses.Products.Delete>;

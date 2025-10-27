@@ -1,6 +1,3 @@
 namespace BugStore.Responses.Products;
 
-public class Update
-{
-    
-}
+public record Update(bool Result);

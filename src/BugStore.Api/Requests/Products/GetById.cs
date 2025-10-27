@@ -1,6 +1,5 @@
+using MediatR;
+
 namespace BugStore.Requests.Products;
 
-public class GetById
-{
-    
-}
+public record GetById(Guid Id):IRequest<Responses.Products.GetById>;

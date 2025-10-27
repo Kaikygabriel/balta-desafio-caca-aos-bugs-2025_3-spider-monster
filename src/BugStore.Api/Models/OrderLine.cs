@@ -1,8 +1,10 @@
+using BugStore.Api.Models;
+using BugStore.Models.Abstraction;
+
 namespace BugStore.Models;
 
-public class OrderLine
+public class OrderLine : Entity
 {
-    public Guid Id { get; set; }
     public Guid OrderId { get; set; }
     
     public int Quantity { get; set; }

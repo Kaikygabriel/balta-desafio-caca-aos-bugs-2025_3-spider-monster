@@ -1,8 +1,10 @@
-namespace BugStore.Models;
+using BugStore.Models;
+using BugStore.Models.Abstraction;
 
-public class Order
+namespace BugStore.Api.Models;
+
+public class Order : Entity
 {
-    public Guid Id { get; set; }
     public Guid CustomerId { get; set; }
     public Customer Customer { get; set; }
     

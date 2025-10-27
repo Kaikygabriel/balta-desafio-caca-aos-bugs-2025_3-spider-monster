@@ -1,6 +1,3 @@
 namespace BugStore.Responses.Products;
 
-public class Create
-{
-    
-}
+public record Create(bool Result);
